@@ -1,5 +1,27 @@
-p[type="full_name"] {
-    text-align: center;
-    font-size: 8vw;
-    /* scaled to 8 * view width */
+
+/* All elements inheirit these properties*/
+html {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 24px;
+    background-color:#CFFFFF; 
+    box-sizing: border-box; /* Use total size when specifying box width*/
 }
+
+/* Direct descendants of body */
+body > *{
+    border: solid;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* Conjunction */
+nav,header,footer,.portfolio.intro {
+    text-align: center;
+}
+
+header,footer {
+    background-color: #9FFFFF;
+}
+
