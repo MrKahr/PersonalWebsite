@@ -1,7 +1,7 @@
 
 /* All elements inheirit these properties*/
 html {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Times New Roman", serif, sans-serif;
     font-size: 24px;
     background-color:#CFFFFF; 
     box-sizing: border-box; /* Use total size when specifying box width*/
