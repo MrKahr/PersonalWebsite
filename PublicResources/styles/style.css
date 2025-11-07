@@ -1,0 +1,54 @@
+/* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographical order. 
+* This provides a human readable order. Alternatively, they could be grouped by specificity, but in my view, that is not as readable. 
+
+/*** IDs prefix ***/
+
+/*** CLASSES prefix ***/
+.skip{
+    position: absolute;
+    background-color: azure;
+    border-radius: 4px;
+    z-index: 999; /*Should not be positioneded relative to other elements on the page*/
+}
+
+/*** TAGS prefix ***/
+body > *{
+    border: solid;
+}
+
+header,footer {
+    background-color: #9FFFFF;
+}
+
+html {
+    font-family: "Times New Roman", serif, sans-serif;
+    font-size: 24px;
+    background-color:#CFFFFF; 
+    box-sizing: border-box; /* Use total size when specifying box width for less developer arithmetic */
+}
+
+/* Increase readability of list */
+ul {
+  list-style-position: inside;
+}
+
+/*** CLASSES prefix ***/
+.skip{
+    position: absolute;
+    top: -40px; /* Position out of frame to show later */ 
+    z-index: 999; /* Skip link should be placed over other elements to allow users to navigate to see that it is possible to skip content */
+} 
+
+
+/*** IMPURE rules ***/
+.skip:focus{
+   top:140px; 
+}
+
+nav,header,footer,.portfolio.intro {
+    text-align: center;
+}
+
+header,footer {
+    background-color: #9FFFFF;
+}
