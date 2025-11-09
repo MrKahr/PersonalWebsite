@@ -1,4 +1,4 @@
-/* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographical order. 
+/* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographic order. 
 * This provides a human readable order. Alternatively, they could be grouped by specificity, but in my view, that is not as readable. 
 
 /*** IDs prefix ***/
@@ -12,12 +12,9 @@
 }
 
 /*** TAGS prefix ***/
-body > *{
-    border: solid;
-}
-
-header,footer {
-    background-color: #9FFFFF;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 html {
@@ -25,11 +22,19 @@ html {
     font-size: 24px;
     background-color:#CFFFFF; 
     box-sizing: border-box; /* Use total size when specifying box width for less developer arithmetic */
+    line-height: 1.1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Increase readability of list */
 ul {
   list-style-position: inside;
+  list-style-type: none;
 }
 
 /*** CLASSES prefix ***/
@@ -37,18 +42,48 @@ ul {
     position: absolute;
     top: -40px; /* Position out of frame to show later */ 
     z-index: 999; /* Skip link should be placed over other elements to allow users to navigate to see that it is possible to skip content */
-} 
+}
+
+.horisontal_list{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 /*** IMPURE rules ***/
-.skip:focus{
-   top:140px; 
+address > * {
+    padding: 0.5em;
+    font-style: normal;
 }
 
-nav,header,footer,.portfolio.intro {
-    text-align: center;
+body > *{
+    border: solid;
+    border-width: 2px;
 }
 
 header,footer {
     background-color: #9FFFFF;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.horisontal_list > * {
+    padding: 0.5em;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.intro > * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.skip:focus{
+   top:140px; 
 }
