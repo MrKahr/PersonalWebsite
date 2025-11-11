@@ -1,7 +1,45 @@
-/* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographical order. 
+/* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographic order. 
 * This provides a human readable order. Alternatively, they could be grouped by specificity, but in my view, that is not as readable. 
 
-/*** IDs prefix ***/
+
+/*** TAGS prefix ***/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-family: "Times New Roman", serif, sans-serif;
+    font-size: 24px;
+    background-color:#CFFFFF; 
+    box-sizing: border-box; /* Use total size when specifying box width for less developer arithmetic */
+    line-height: 1.1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase readability of list */
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+  line-height: 1.4;
+}
+
+/*** CLASSES prefix ***/
+.skip{
+    position: absolute;
+    top: -40px; /* Position out of frame to show later */ 
+    z-index: 999; /* Skip link should be placed over other elements to allow users to navigate to see that it is possible to skip content */
+}
+
+.horisontal_list{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /*** CLASSES prefix ***/
 .skip{
@@ -11,44 +49,51 @@
     z-index: 999; /*Should not be positioneded relative to other elements on the page*/
 }
 
-/*** TAGS prefix ***/
-body > *{
+/*** IDs prefix ***/
+
+/*** IMPURE rules ***/
+a:hover{
     border: solid;
 }
 
+address > * {
+    padding: 0.5em;
+    font-style: normal;
+}
+
+body > *{
+    border: solid;
+    border-width: 1px;
+}
+
 header,footer {
     background-color: #9FFFFF;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
-html {
-    font-family: "Times New Roman", serif, sans-serif;
-    font-size: 24px;
-    background-color:#CFFFFF; 
-    box-sizing: border-box; /* Use total size when specifying box width for less developer arithmetic */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+.horisontal_list > * {
+    padding: 0.5em;
 }
 
-/* Increase readability of list */
-ul {
-  list-style-position: inside;
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-/*** CLASSES prefix ***/
-.skip{
-    position: absolute;
-    top: -40px; /* Position out of frame to show later */ 
-    z-index: 999; /* Skip link should be placed over other elements to allow users to navigate to see that it is possible to skip content */
-} 
+.intro > * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 
-
-/*** IMPURE rules ***/
 .skip:focus{
    top:140px; 
-}
-
-nav,header,footer,.portfolio.intro {
-    text-align: center;
-}
-
-header,footer {
-    background-color: #9FFFFF;
 }
