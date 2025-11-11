@@ -35,6 +35,7 @@ nav {
 ul {
   list-style-position: inside;
   list-style-type: none;
+  line-height: 1.4;
 }
 
 /*** CLASSES prefix ***/
@@ -68,7 +69,12 @@ header,footer {
     justify-content:center;
 }
 
-
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
 .horisontal_list > * {
     padding: 0.5em;
 }
