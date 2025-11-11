@@ -1,15 +1,6 @@
 /* I ordered the css-rules according to element type primarily and lexiographical order secondarily. Impure rules are listed at the end in lexiographic order. 
 * This provides a human readable order. Alternatively, they could be grouped by specificity, but in my view, that is not as readable. 
 
-/*** IDs prefix ***/
-
-/*** CLASSES prefix ***/
-.skip{
-    position: absolute;
-    background-color: azure;
-    border-radius: 4px;
-    z-index: 999; /*Should not be positioneded relative to other elements on the page*/
-}
 
 /*** TAGS prefix ***/
 body {
@@ -50,8 +41,21 @@ ul {
     justify-content: space-evenly;
 }
 
+/*** CLASSES prefix ***/
+.skip{
+    position: absolute;
+    background-color: azure;
+    border-radius: 4px;
+    z-index: 999; /*Should not be positioneded relative to other elements on the page*/
+}
+
+/*** IDs prefix ***/
 
 /*** IMPURE rules ***/
+a:hover{
+    border: solid;
+}
+
 address > * {
     padding: 0.5em;
     font-style: normal;
@@ -59,7 +63,7 @@ address > * {
 
 body > *{
     border: solid;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 header,footer {
