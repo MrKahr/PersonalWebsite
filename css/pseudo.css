@@ -1,0 +1,7 @@
+a:hover{
+    border: solid;
+}
+
+.skip:focus{
+   top:140px; 
+}

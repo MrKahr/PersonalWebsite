@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-family: "Times New Roman", serif, sans-serif;
+    font-size: 24px;
+    background-color:#CFFFFF; 
+    box-sizing: border-box; /* Use total size when specifying box width for less developer arithmetic */
+    line-height: 1.1;
+}
+
+address > * {
+    padding: 0.5em;
+    font-style: normal;
+}
+
+body > *{
+    border: solid;
+    border-width: 1px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.intro > * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

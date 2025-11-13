@@ -1,0 +1,16 @@
+.horisontal_list > * {
+    padding: 0.5em;
+}
+
+.horisontal_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skip{
+    position: absolute;
+    top: -40px; /* Position out of frame to show later */ 
+    background-color: azure;
+    border-radius: 4px;
+    z-index: 999; /* Skip link should be placed over other elements to allow users to navigate to see that it is possible to skip content */
+}
