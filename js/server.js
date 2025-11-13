@@ -1,5 +1,5 @@
 // secure protocol is very nice to have but is strictly not required
-const serverSettings = require("./configuration.js");
+const serverSettings = require("./Serverconfiguration.js");
 const fs = require("node:fs");
 const server = require("node:https");
 
