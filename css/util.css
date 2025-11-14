@@ -1,3 +1,5 @@
+/* No unifying semantics, but often accessiblity or styling existing elements */ 
+
 .horisontal_list > * {
     padding: 0.5em;
 }
