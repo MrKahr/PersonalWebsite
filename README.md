@@ -1,6 +1,5 @@
 # A personal portfolio page
-I use this website as a tool to encourage myself to build projects and to keep my interest in programming and computer science going. 
-My goal is to combine my backgrounds in both the humanities and computer science to build software that is centered around the user.  
+I use this website as a learning tool to build software and learn more about computer science.  
 
 # Current projects 
 - [ ] - Building a portfolio page 
